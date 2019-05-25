@@ -10,6 +10,6 @@ class PingHandlerFactory
 {
     public function __invoke(ContainerInterface $container) : PingHandler
     {
-        return new PingHandler();
+        return new PingHandler("dupa2");
     }
 }

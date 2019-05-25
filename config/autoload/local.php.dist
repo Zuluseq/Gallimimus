@@ -4,9 +4,31 @@
  *
  * Copy this file to `local.php` and change its settings as required.
  * `local.php` is ignored by git and safe to use for local and sensitive data like usernames and passwords.
+ * 
+ * 'dsn'    => 'mysql:dbname=vizmedia_cml;host=localhost;charset=utf8',
+ * 
  */
 
 declare(strict_types=1);
 
 return [
+	'ConfigAggregator::ENABLE_CACHE' => false,
+    'db' => [
+        'driver' => 'Pdo',
+		'charset' => 'UTF8',
+		'database' => 'dbname',
+		'driver' => \Mysqli::class,
+		'hostname' => 'localhost',
+		'username' => 'crm',
+		'password' => 'mypassword',
+		'options' => ['buffer_results' => true],  /* to musi być ! */
+    ],
+	'vizconfig' => [
+		'kontaktMail' => 'admin@mysite.com',
+		'pathToImages' => '/var/www/filestorage',
+		'JWTKeyToken' => 'SUPERTAJNYKLUCZDOGENEROWANIATOKENA-ZMIEN-NA-DOWOLNY-CIAG-ZNAKOW-123123123',
+		'JWTiss' => 'http://teststrona.pl',
+		'JWTaud' => 'http://teststrona.pl',
+	]
 ];
+

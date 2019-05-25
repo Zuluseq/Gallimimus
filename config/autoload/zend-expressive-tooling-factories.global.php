@@ -14,7 +14,9 @@ return [
         'factories' => [
             App\Handler\HelloHandler::class => App\Handler\HelloHandlerFactory::class,
             Dupa\Handler\PingHandler::class => Dupa\Handler\PingHandlerFactory::class,
-            Sites\Handler\PingHandler::class => Sites\Handler\PingHandlerFactory::class,
+            // Sites\Handler\PingHandler::class => Sites\Handler\PingHandlerFactory::class,
+            // Files\Handler\FileHandler::class => Files\Handler\FileHandlerFactory::class,
+            // Files\Handler\PingHandler::class => Files\Handler\PingHandlerFactory::class,
         ],
     ],
 ];

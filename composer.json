@@ -40,7 +40,9 @@
         "php": "^7.1",
         "zendframework/zend-component-installer": "^2.1.1",
         "zendframework/zend-config-aggregator": "^1.0",
+        "zendframework/zend-db": "^2.9@dev",
         "zendframework/zend-diactoros": "^1.7.1 || ^2.0",
+        "zendframework/zend-eventmanager": "^3.2@dev",
         "zendframework/zend-expressive": "^3.0.1",
         "zendframework/zend-expressive-fastroute": "^3.0",
         "zendframework/zend-expressive-helpers": "^5.0",
@@ -64,7 +66,7 @@
             "Dupa\\": "src/Dupa/src/",
             "Sites\\": "vendor/zuluseq/gallimimus-sites-module/src/",
             "Repository\\": "vendor/zuluseq/gallimimus-repository-module/src/",
-            "Files\\": "vendor/zuluseq/gallimimus-files-module/src/"
+            "GallimimusFilesModule\\": "vendor/zuluseq/gallimimus-files-module/src/"
         }
     },
     "autoload-dev": {
