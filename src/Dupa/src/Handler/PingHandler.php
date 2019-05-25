@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace App\Handler;
+namespace Dupa\Handler;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use Zend\Diactoros\Response\JsonResponse;
 
-class HelloHandler implements RequestHandlerInterface
+use function time;
+
+class PingHandler implements RequestHandlerInterface
 {
     public function handle(ServerRequestInterface $request) : ResponseInterface
     {
-		$data = [
-			"dupa" => "blada"
-		];
-        return new JsonResponse($data);
+        return new JsonResponse(['ping dupa:ack' => time()]);
     }
 }

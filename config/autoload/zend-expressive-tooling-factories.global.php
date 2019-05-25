@@ -13,6 +13,8 @@ return [
     'dependencies' => [
         'factories' => [
             App\Handler\HelloHandler::class => App\Handler\HelloHandlerFactory::class,
+            Dupa\Handler\PingHandler::class => Dupa\Handler\PingHandlerFactory::class,
+            Sites\Handler\PingHandler::class => Sites\Handler\PingHandlerFactory::class,
         ],
     ],
 ];
