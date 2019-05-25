@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45cc7dd487986c57cbcf3615fc3b6597",
+    "content-hash": "01b4162f1813c6e9aaf809bbdf484a74",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1180,17 +1180,121 @@
             "time": "2019-04-29T21:19:52+00:00"
         },
         {
+            "name": "zuluseq/gallimimus-files-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Zuluseq/Gallimimus-Files-Module.git",
+                "reference": "d87f6a947efbabea464295210c0371f632e3f5fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Zuluseq/Gallimimus-Files-Module/zipball/d87f6a947efbabea464295210c0371f632e3f5fd",
+                "reference": "d87f6a947efbabea464295210c0371f632e3f5fd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "zendframework/zend-component-installer": "^2.1.1",
+                "zendframework/zend-config-aggregator": "^1.0",
+                "zendframework/zend-diactoros": "^1.7.1 || ^2.0",
+                "zendframework/zend-expressive": "^3.0.1",
+                "zendframework/zend-expressive-fastroute": "^3.0",
+                "zendframework/zend-expressive-helpers": "^5.0",
+                "zendframework/zend-servicemanager": "^3.3",
+                "zendframework/zend-stdlib": "^3.1"
+            },
+            "require-dev": {
+                "filp/whoops": "^2.1.12",
+                "phpunit/phpunit": "^7.0.1",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^2.9.1",
+                "zendframework/zend-expressive-tooling": "^1.0",
+                "zfcampus/zf-development-mode": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gallimimus\\Files\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Gallimimus Files Module for Gallimimus",
+            "homepage": "https://github.com/Zuluseq/Gallimimus-Files-Module",
+            "keywords": [
+                "Gallimimus",
+                "cms",
+                "zend-expressive"
+            ],
+            "time": "2019-05-25T17:04:25+00:00"
+        },
+        {
+            "name": "zuluseq/gallimimus-repository-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Zuluseq/Gallimimus-Repository-Module.git",
+                "reference": "a36e636cb9ddb43926a639829f739d7ed5018504"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Zuluseq/Gallimimus-Repository-Module/zipball/a36e636cb9ddb43926a639829f739d7ed5018504",
+                "reference": "a36e636cb9ddb43926a639829f739d7ed5018504",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "zendframework/zend-component-installer": "^2.1.1",
+                "zendframework/zend-config-aggregator": "^1.0",
+                "zendframework/zend-diactoros": "^1.7.1 || ^2.0",
+                "zendframework/zend-expressive": "^3.0.1",
+                "zendframework/zend-expressive-fastroute": "^3.0",
+                "zendframework/zend-expressive-helpers": "^5.0",
+                "zendframework/zend-servicemanager": "^3.3",
+                "zendframework/zend-stdlib": "^3.1"
+            },
+            "require-dev": {
+                "filp/whoops": "^2.1.12",
+                "phpunit/phpunit": "^7.0.1",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^2.9.1",
+                "zendframework/zend-expressive-tooling": "^1.0",
+                "zfcampus/zf-development-mode": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gallimimus\\Repository\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Gallimimus Repository Module for Gallimimus",
+            "homepage": "https://github.com/Zuluseq/Gallimimus-Repository-Module",
+            "keywords": [
+                "Gallimimus",
+                "cms",
+                "zend-expressive"
+            ],
+            "time": "2019-05-25T14:12:33+00:00"
+        },
+        {
             "name": "zuluseq/gallimimus-sites-module",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zuluseq/gallimimus-sites-module.git",
-                "reference": "dfe539e792f9ca926a3c49700ad0d0ef592c15ef"
+                "reference": "ab68d0d7acb59390339e726a456d8eb740eec4d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Zuluseq/gallimimus-sites-module/zipball/dfe539e792f9ca926a3c49700ad0d0ef592c15ef",
-                "reference": "dfe539e792f9ca926a3c49700ad0d0ef592c15ef",
+                "url": "https://api.github.com/repos/Zuluseq/gallimimus-sites-module/zipball/ab68d0d7acb59390339e726a456d8eb740eec4d1",
+                "reference": "ab68d0d7acb59390339e726a456d8eb740eec4d1",
                 "shasum": ""
             },
             "require": {
@@ -1229,7 +1333,7 @@
                 "cms",
                 "zend-expressive"
             ],
-            "time": "2019-05-12T12:56:26+00:00"
+            "time": "2019-05-25T13:31:20+00:00"
         }
     ],
     "packages-dev": [
@@ -3641,6 +3745,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "zuluseq/gallimimus-files-module": 20,
+        "zuluseq/gallimimus-repository-module": 20,
         "zuluseq/gallimimus-sites-module": 20,
         "roave/security-advisories": 20
     },

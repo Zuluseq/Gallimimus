@@ -37,4 +37,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     $app->get('/api/ping', App\Handler\PingHandler::class, 'api.ping');
     $app->get('/dupa/ping', Dupa\Handler\PingHandler::class, 'dupa.ping');
     $app->get('/sites/ping', Sites\Handler\PingHandler::class, 'sites.ping');
+    $app->get('/repository/ping', Repository\Handler\PingHandler::class, 'repository.ping');
+	$app->get('/files/ping', Files\Handler\PingHandler::class, 'files.ping');
+	$app->get('/img', Files\Handler\FileHandler::class, 'files.file');
 };
