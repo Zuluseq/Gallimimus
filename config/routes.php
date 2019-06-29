@@ -34,13 +34,13 @@ use Zend\Expressive\MiddlewareFactory;
  */
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
     // $app->get('/', App\Handler\HomePageHandler::class, 'home');
-    $app->get('/', Sites\Handler\SiteHandler::class, 'sites.home');
+    $app->get('/', GallimimusSitesModule\Handler\SiteHandler::class, 'sites.home');
     $app->get('/api/ping[/]', App\Handler\PingHandler::class, 'api.ping');
     $app->get('/dupa/ping[/]', Dupa\Handler\PingHandler::class, 'dupa.ping');
-    $app->get('/sites/ping[/]', Sites\Handler\PingHandler::class, 'sites.ping');
-    $app->get('/sites[/]', Sites\Handler\SiteHandler::class, 'sites.site');
+    $app->get('/sites/ping[/]', GallimimusSitesModule\Handler\PingHandler::class, 'sites.ping');
+    $app->get('/sites[/]', GallimimusSitesModule\Handler\SiteHandler::class, 'sites.site');
     $app->get('/repository/ping[/]', GallimimusRepositoryModule\Handler\PingHandler::class, 'repository.ping');
 	$app->get('/files/ping[/]', GallimimusFilesModule\Handler\PingHandler::class, 'files.ping');
 	$app->get('/img/{id}[/]', GallimimusFilesModule\Handler\FileHandler::class, 'files.file');
-    $app->get('/{slug}[/]', Sites\Handler\SiteHandler::class, 'sites.site');
+    $app->get('/{slug}[/]', GallimimusSitesModule\Handler\SiteHandler::class, 'sites.site');
 };
