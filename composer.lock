@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f58862e5c9de91d0619de690e59728e",
+    "content-hash": "392fb13009109d18b43a34cd872f1fd7",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -2239,12 +2239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1d4dfbf6cd3a50aaceb7af96ba5dbb5b518f7434"
+                "reference": "1426ca6a2d3c5fc2afb77ac043ce34a11288f0b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1d4dfbf6cd3a50aaceb7af96ba5dbb5b518f7434",
-                "reference": "1d4dfbf6cd3a50aaceb7af96ba5dbb5b518f7434",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1426ca6a2d3c5fc2afb77ac043ce34a11288f0b2",
+                "reference": "1426ca6a2d3c5fc2afb77ac043ce34a11288f0b2",
                 "shasum": ""
             },
             "require": {
@@ -2315,7 +2315,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-05-20T18:38:43+00:00"
+            "time": "2019-05-26T13:28:44+00:00"
         },
         {
             "name": "psr/log",
@@ -3859,6 +3859,7 @@
     "stability-flags": {
         "zendframework/zend-db": 20,
         "zendframework/zend-eventmanager": 20,
+        "zendframework/zend-expressive-template": 20,
         "zuluseq/gallimimus-files-module": 20,
         "zuluseq/gallimimus-repository-module": 20,
         "zuluseq/gallimimus-sites-module": 20,
