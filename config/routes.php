@@ -39,6 +39,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     $app->get('/dupa/ping[/]', Dupa\Handler\PingHandler::class, 'dupa.ping');
     $app->get('/sites/ping[/]', GallimimusSitesModule\Handler\PingHandler::class, 'sites.ping');
     $app->get('/sites[/]', GallimimusSitesModule\Handler\SiteHandler::class, 'sites.site');
+    $app->get('/repository/get/{slug}[/]', GallimimusRepositoryModule\Handler\Get::class, 'repository.get');
     $app->get('/repository/ping[/]', GallimimusRepositoryModule\Handler\PingHandler::class, 'repository.ping');
 	$app->get('/files/ping[/]', GallimimusFilesModule\Handler\PingHandler::class, 'files.ping');
 	$app->get('/img/{id}[/]', GallimimusFilesModule\Handler\FileHandler::class, 'files.file');

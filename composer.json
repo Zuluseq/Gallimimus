@@ -65,7 +65,7 @@
         "psr-4": {
             "App\\": "src/App/",
             "Dupa\\": "src/Dupa/src/",
-            "Sites\\": "vendor/zuluseq/gallimimus-sites-module/src/",
+            "GallimimusSitesModule\\": "vendor/zuluseq/gallimimus-sites-module/src/",
             "GallimimusRepositoryModule\\": "vendor/zuluseq/gallimimus-repository-module/src/",
             "GallimimusFilesModule\\": "vendor/zuluseq/gallimimus-files-module/src/"
         }
