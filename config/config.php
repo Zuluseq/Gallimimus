@@ -13,10 +13,12 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    \Zend\Validator\ConfigProvider::class,
     \Zend\Db\ConfigProvider::class,
     \Dupa\ConfigProvider::class,
     \GallimimusFilesModule\ConfigProvider::class,
     \GallimimusRepositoryModule\ConfigProvider::class,
+    \GallimimusSitesModule\ConfigProvider::class,
     \Zend\HttpHandlerRunner\ConfigProvider::class,
     \Zend\Expressive\Router\FastRouteRouter\ConfigProvider::class,
     // Include cache configuration
