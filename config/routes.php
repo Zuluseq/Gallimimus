@@ -42,6 +42,9 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     $app->get('/repository/get/{slug}[/]', GallimimusRepositoryModule\Handler\Get::class, 'repository.get');
     $app->get('/repository/ping[/]', GallimimusRepositoryModule\Handler\PingHandler::class, 'repository.ping');
 	$app->get('/files/ping[/]', GallimimusFilesModule\Handler\PingHandler::class, 'files.ping');
+	$app->post('/upload[/]', GallimimusFilesModule\Handler\UploadHandler::class, 'files.upload');
 	$app->get('/img/{id}[/]', GallimimusFilesModule\Handler\FileHandler::class, 'files.file');
+	$app->get('/thmb/{id}[/]', GallimimusFilesModule\Handler\FileHandler::class, 'files.thmb');
+	$app->get('/thumb/{id}[/]', GallimimusFilesModule\Handler\FileHandler::class, 'files.thumb');
     $app->get('/{slug}[/]', GallimimusSitesModule\Handler\SiteHandler::class, 'sites.site');
 };
